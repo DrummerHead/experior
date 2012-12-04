@@ -1,9 +1,9 @@
 <!doctype html public "DrummerHead">
 <html>
 <head>
-<title><%= yield(:title) %> | Y toda la baracutanga</title>
+<title><%= posta_title(yield(:title)) %></title>
 <meta charset='utf-8'>
-<%= stylesheet_link_tag    "application", :media => "all" %>
+<%= stylesheet_link_tag    "application" %>
 <%= javascript_include_tag "application" %>
 <%= csrf_meta_tags %>
 </head>
