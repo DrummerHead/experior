@@ -36,4 +36,16 @@ describe "Static pages" do
       page.should have_selector('title', :text => 'Acerca')
     end
   end
+
+  describe "Contact page" do
+    it "Should tell you how to contact aliens" do
+      visit '/static_pages/contact'
+      page.should have_content('Just get high and then be drowzy. Aliens will come and take the opportunity to examine you.')
+    end
+
+    it "should have the correct title" do
+      visit '/static_pages/contact'
+      page.should have_selector('title', :text => 'Contact of a different type')
+    end
+  end
 end
