@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!doctype html public "DrummerHead">
 <html>
 <head>
-  <title>SampleApp</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+<title><%= yield(:title) %> | Y toda la baracutanga</title>
+<meta charset='utf-8'>
+<%= stylesheet_link_tag    "application", :media => "all" %>
+<%= javascript_include_tag "application" %>
+<%= csrf_meta_tags %>
 </head>
+
 <body>
-
 <%= yield %>
-
 </body>
 </html>
